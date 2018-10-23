@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bernstadt Times</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	iframe {
+		width: 320px;
+		height: 568px;
+		border: 1px solid #ccc;
+		position: relative;
+		display: block;
+		margin: 50px auto 0 auto;
+		animation: width 6s infinite;
+		animation-direction: alternate;
+		overflow: hidden;
+		overflow-x: hidden;
+ overflow-y: scroll;
+ 
+ overflow: auto;
+	} 
+	iframe::-webkit-scrollbar { width: 0 !important }
+	::-webkit-scrollbar { width: 0 !important }
+	*::-webkit-scrollbar {
+	display: none;
+	}
+	::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+	/*
+	@keyframes width {
+			from {
+				width: 90vw;
+			}
+			to {
+				width: 400px;
+			}
+		} */
+	</style>
+</head>
+<body>
+    <iframe src="index.html" frameborder="0"  />
+</body>
+</html>>
