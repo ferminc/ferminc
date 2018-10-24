@@ -204,7 +204,6 @@ article {
 	width: 100%;
 	position: relative;
 	font-family: 'Source Serif Pro', serif;
-
     display: flex;
     align-items: flex-end;
 }
@@ -226,7 +225,6 @@ article img {
 	font-weight: 700;
 	font-size: 18px;
 	transition: .2s;
-
 	font-family: 'Source Sans Pro', Myriad Pro, sans-serif;
 }
 
@@ -259,6 +257,7 @@ article img {
 	background: #ccc;
 	font-weight: 700;
 	width: calc(100% - 20px);
+	margin-top: 10px;
 	margin-left: 10px;
 	padding: 20px 0;
 	justify-content: center;
