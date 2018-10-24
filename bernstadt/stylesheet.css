@@ -20,8 +20,6 @@ ul {
 	list-style: none;
 }
 
-@import url('//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700');
-
 body {
 	font-family: 'Source Sans Pro', Myriad Pro, sans-serif;
 	position: relative;
@@ -103,17 +101,6 @@ header {
 
 input {
 	outline: none;
-}
-
-.search-icon:hover:after {
-	content: "Search...";
-	position: absolute;
-	margin: 4px 40px 0 0;
-	font-size: 20px;
-	font-style: italic;
-	z-index: 1;
-	right: 0;
-	top: 0;
 }
 
 #search-input-header {
@@ -204,39 +191,15 @@ article {
 	width: 100%;
 	position: relative;
 	font-family: 'Source Serif Pro', serif;
-    display: flex;
-    align-items: flex-end;
+	display: flex;
+	align-items: flex-end;
+	transition: .2s;
 }
 
 article img {
 	padding-top: 10px;
 	width: 100%;
-	bottom: 0;
-	position: relative;
 	transition: .2s;
-}
-
-[style*="--aspect-ratio"] > :first-child {
-  width: 100%;
-}
-[style*="--aspect-ratio"] > img {  
-  height: auto;
-} 
-@supports (--custom:property) {
-  [style*="--aspect-ratio"] {
-    position: relative;
-  }
-  [style*="--aspect-ratio"]::before {
-    content: "";
-    display: block;
-    padding-bottom: calc(100% / (var(--aspect-ratio)));
-  }  
-  [style*="--aspect-ratio"] > :first-child {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-  }  
 }
 
 .category {
@@ -258,6 +221,14 @@ article img {
 
 .category .writer {
 	color: #ccc;
+}
+
+.top-left-article {
+	box-shadow: 10px 0px 15px -10px rgba(0, 0, 0, .2);
+}
+
+.section-article:hover {
+	box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, .3);
 }
 
 .top-left-article .category {
@@ -301,10 +272,6 @@ article img {
 
 article a:hover .title-big, article a:hover .title-medium, article a:hover .title-small {
 	text-decoration: underline;
-}
-
-article a:hover img {
-	filter: opacity(80%);
 }
 
 .title-big {
@@ -564,6 +531,9 @@ footer {
 	main {
 		margin: 10px 0 0 0;
 	}
+	.top-left-article, .section-article:hover {
+		box-shadow: none;
+	}
 	.news-container {
 		flex-direction: column;
 	}
@@ -573,10 +543,7 @@ footer {
 	#logo-footer img {
 		height: 20px;
 	}
-	#search-box-footer {
-		display: none;
-	}
-	#weather {
+	#search-box-footer, #weather {
 		display: none;
 	}
 	.section-ad {
