@@ -139,7 +139,6 @@ nav {
 	height: 40px;
 	font-size: 14px;
 	line-height: 100%;
-	font-family: garamond, times new roman, serif;
 }
 
 #nav-links {
@@ -204,11 +203,17 @@ article {
 	padding: 10px;
 	width: 100%;
 	position: relative;
+	font-family: 'Source Serif Pro', serif;
+
+    display: flex;
+    align-items: flex-end;
 }
 
 article img {
 	padding-top: 10px;
 	width: 100%;
+	bottom: 0;
+	position: relative;
 }
 
 .category {
@@ -221,6 +226,8 @@ article img {
 	font-weight: 700;
 	font-size: 18px;
 	transition: .2s;
+
+	font-family: 'Source Sans Pro', Myriad Pro, sans-serif;
 }
 
 .category:hover {
@@ -266,14 +273,16 @@ article img {
 .title-big, .title-medium, .title-small {
 	font-weight: 700;
 	color: #000;
+	line-height: 100%;
 }
 
-article:hover .title-big, article:hover .title-medium, article:hover .title-small {
+article a:hover .title-big, article a:hover .title-medium, article a:hover .title-small {
 	text-decoration: underline;
 }
 
 .title-big {
 	font-size: 26px;
+	font-weight: 700;
 }
 
 .title-medium {
