@@ -213,6 +213,30 @@ article img {
 	width: 100%;
 	bottom: 0;
 	position: relative;
+	transition: .2s;
+}
+
+[style*="--aspect-ratio"] > :first-child {
+  width: 100%;
+}
+[style*="--aspect-ratio"] > img {  
+  height: auto;
+} 
+@supports (--custom:property) {
+  [style*="--aspect-ratio"] {
+    position: relative;
+  }
+  [style*="--aspect-ratio"]::before {
+    content: "";
+    display: block;
+    padding-bottom: calc(100% / (var(--aspect-ratio)));
+  }  
+  [style*="--aspect-ratio"] > :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }  
 }
 
 .category {
@@ -277,6 +301,10 @@ article img {
 
 article a:hover .title-big, article a:hover .title-medium, article a:hover .title-small {
 	text-decoration: underline;
+}
+
+article a:hover img {
+	filter: opacity(80%);
 }
 
 .title-big {
