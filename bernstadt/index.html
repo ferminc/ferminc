@@ -5,9 +5,9 @@
 	<title>Bernstadt Times</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="shortcut icon" type="image/png" href="fav.png" />
-	<link rel="icon" href="fav.svg" type="image/svg+xml" />
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<link rel="shortcut icon" type="image/png" href="graphics/fav.png" />
+	<link rel="icon" href="graphics/fav.svg" type="image/svg+xml" />
 	<meta name="theme-color" content="#fff000">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700" rel="stylesheet">
@@ -16,32 +16,32 @@
 <body>
 	<header>
 		<div class="wrap">
-			<a href="#" id="menutrigger" onclick="showNav()">
-				<img src="menu.svg" />
+			<button id="js-menutrigger" class="menu-button" onclick="showNav()">
+				<img height="40px" src="graphics/menu.svg" />
+			</button>
+			<a href="#" class="weather">
+				<div class="weather-temp">20°C</div>
+				<div class="weather-state"><img width="38px" src="graphics/partlysunny.svg" /></div>
 			</a>
-			<a href="#" id="weather">
-				<div id="weather-temp">20°C</div>
-				<div id="weather-state"><img src="partlysunny.svg" /></div>
+			<a href="#" class="logo header-logo">
+				<img width="412px" src="graphics/logo.svg" alt="Bernstadt Times" title="Bernstadt Times">
 			</a>
-			<a href="#" class="logo" id="header-logo">
-				<img src="logo.svg" alt="Bernstadt Times" title="Bernstadt Times">
-			</a>
-			<div id="search-box-header">
-				<input type="text" name="search-box-footer" id="search-input-header" onfocus="addOverlay()" onblur="removeOverlay()">
+			<div class="search-box-header">
+				<input type="text" name="search-box-footer" class="search-input-header" id="search-input-header" onfocus="addOverlay()" onblur="removeOverlay()">
 				<label for="search-input-header">
 					<div class="search-icon">
-						<img src="search.svg" alt="Search" title="Search" />
+						<img height="30px" src="graphics/search.svg" alt="Search" title="Search" />
 					</div>
-					<label>
+				<label>
 			</div>
 		</div>
 		</div>
 	</header>
 		<div id="overlay" onclick="showNav()"></div>
-		<div id="site-content">
+		<div class="site-content">
 			<div class="wrap">
-			<nav id="jsMobile-show" class="show-nav-mobile">
-				<ul id="nav-links">
+			<nav id="js-mobile-show" class="show-nav-mobile">
+				<ul class="nav-links">
 					<li><a href="#">Most recent</a></li>
 					<li><a href="#">Opinion</a></li>
 					<li><a href="#">Politics</a></li>
@@ -56,7 +56,7 @@
 				<article class="top-left-article">
 					<a href="#">
 						<div class="title-big">This is the title This is the title</div>
-						<img src="cars.jpg" alt="Cars" title="Photo by Nabeel Syed on Unsplash" />
+						<img src="images/cars.jpg" alt="Cars" title="Photo by Nabeel Syed on Unsplash" />
 					</a>
 					<a href="#" class="category">OPINION: <span class="writer">JOHN SMITH</span></a>
 				</article>
@@ -66,14 +66,14 @@
 				<article class="top-right-article">
 					<a href="#">
 						<div class="title-medium">This is the title This is the title</div>
-						<img src="people.jpg" alt="People" title="Photo by Wade Austin Ellis on Unsplash" />
+						<img src="images/people.jpg" alt="People" title="Photo by Wade Austin Ellis on Unsplash" />
 					</a>
 					<a href="#" class="category">OPINION: <span class="writer">JOHN SMITH</span></a>
 				</article>
 				<article class="top-right-article">
 					<a href="#">
 						<div class="title-medium">This is the title This is the title</div>
-						<img src="airport.jpg" alt="Article image" title="Photo by Skyler Smith on Unsplash" />
+						<img src="images/airport.jpg" alt="Article image" title="Photo by Skyler Smith on Unsplash" />
 					</a>
 					<a href="#" class="category">POLITICS</a>
 				</article>
@@ -93,21 +93,21 @@
 						<a href="#">
 							<div class="title-small">This is the title This is the title</div>
 
-							<img src="news.jpg" alt="Article image" title="Article image" />
+							<img src="images/news.jpg" alt="Article image" title="Article image" />
 						</a>
 					</article>
 					<article class="section-article">
 						<a href="#">
 							<div class="title-small">This is the title This is the title</div>
 
-							<img src="news.jpg" alt="Article image" title="Article image" />
+							<img src="images/news.jpg" alt="Article image" title="Article image" />
 						</a>
 					</article>
 					<article class="section-article">
 						<a href="#">
 							<div class="title-small">This is the title This is the title</div>
 
-							<img src="news.jpg" alt="Article image" title="Article image" />
+							<img src="images/news.jpg" alt="Article image" title="Article image" />
 						</a>
 					</article>
 				</div>
@@ -123,7 +123,7 @@
 							<div class="title-small">This is the title This is the titleThis is the title This is the titleThis is the title
 								This is the title</div>
 
-							<img src="news.jpg" alt="Article image" title="Article image" />
+							<img src="images/news.jpg" alt="Article image" title="Article image" />
 						</a>
 						<a href="#" class="category">IFA 1998</a>
 					</article>
@@ -131,14 +131,14 @@
 						<a href="#">
 							<div class="title-small">This is the title This is the title</div>
 
-							<img src="news.jpg" alt="Article image" title="Article image" />
+							<img src="images/news.jpg" alt="Article image" title="Article image" />
 						</a>
 					</article>
 					<article class="section-article">
 						<a href="#">
 							<div class="title-small">This is the title This is the title</div>
 
-							<img src="news.jpg" alt="Article image" title="Article image" />
+							<img src="images/news.jpg" alt="Article image" title="Article image" />
 						</a>
 					</article>
 				</div>
@@ -147,27 +147,27 @@
 						<a href="#">
 							<div class="title-small">This is the title This is the title</div>
 
-							<img src="news.jpg" alt="Article image" title="Article image" />
+							<img src="images/news.jpg" alt="Article image" title="Article image" />
 						</a>
 					</article>
 					<article class="adversiment section-ad">Advertisement</article>
 				</div>
 			</section>
 			</div>
-			<div id="bottom-padding"></div>
+			<div class="bottom-padding"></div>
 		</div>
 	</div>
 	<footer>
 		<div class="wrap">
-			<div id="footer-cont">
-				<div class="logo" id="logo-footer">
-					<a href="#"><img src="logo.svg" alt="Bernstadt Times" title="Bernstadt Times">
+			<div class="footer-cont">
+				<div class="logo logo-footer">
+					<a href="#"><img src="graphics/logo.svg" alt="Bernstadt Times" title="Bernstadt Times">
 					</a>
 				</div>
-				<div id="search-box-footer">
-					<input type="text" name="search-input-footer" placeholder="Search..." id="search-input-footer">
+				<div class="search-box-footer">
+					<input type="text" name="search-input-footer" placeholder="Search..." class="search-input-footer" id="search-input-footer">
 					<div class="search-icon">
-						<img src="search.svg" alt="Search" title="Search" />
+						<img height="24px" src="graphics/search.svg" alt="Search" title="Search" />
 					</div>
 				</div>
 			</div>
@@ -175,19 +175,16 @@
 	</footer>
 </body>
 <script type="text/javascript">
-
-
 	if (window.matchMedia("(max-width: 670px)").matches) {
 		function addOverlay() {
 			var element = document.getElementById("overlay");
 			element.classList.add("overlay-class");
-			var x = document.getElementById("jsMobile-show");
+			var x = document.getElementById("js-mobile-show");
 			x.style.display = "none";
-			var z = document.getElementById("menutrigger");
+			var z = document.getElementById("js-menutrigger");
 			z.style.marginLeft = "5px";
 		}
 	}
-
 
 	if (window.matchMedia("(max-width:1040px) and (min-width:671px)").matches) {
 		function addOverlay() {
@@ -202,9 +199,9 @@
 	}
 
 	function showNav() {
-		var x = document.getElementById("jsMobile-show");
+		var x = document.getElementById("js-mobile-show");
 		var y = document.getElementById("overlay");
-		var z = document.getElementById("menutrigger");
+		var z = document.getElementById("js-menutrigger");
 		if (x.style.display === "block") {
 			x.style.display = "none";
 			y.classList.remove("overlay-class");
