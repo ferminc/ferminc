@@ -52,7 +52,7 @@ header {
 	position: relative;
 }
 
-header .wrap {
+.header-wrap {
 	position: relative;
 }
 
@@ -207,13 +207,12 @@ article {
 article img {
 	padding-top: 10px;
 	width: 100%;
-	transition: .2s;
 }
 
 .category {
 	position: absolute;
 	bottom: 0;
-	margin-bottom: 20px;
+	margin: 0 0 20px 0;
 	padding: 10px;
 	background: rgba(0, 0, 0, .6);
 	color: #fff;
@@ -241,17 +240,19 @@ article img {
 
 .top-left-article .category {
 	left: 0;
+	margin: 0 0 20px 20px;
 }
 
 .top-right-article .category {
 	right: 0;
+	margin: 0 20px 20px 0;
 }
 
 .section-article .category {
 	font-size: 15px;
 	padding: 5px;
 	left: 0;
-	margin: 0 0 10px 0;
+	margin: 0 0 10px 10px;
 }
 
 .adversiment {
@@ -272,13 +273,17 @@ article img {
 	margin-left: 5px;
 }
 
-.title-big, .title-medium, .title-small {
+.title-big, 
+.title-medium, 
+.title-small {
 	font-weight: 700;
 	color: #000;
 	line-height: 100%;
 }
 
-article a:hover .title-big, article a:hover .title-medium, article a:hover .title-small {
+article a:hover .title-big, 
+article a:hover .title-medium, 
+article a:hover .title-small {
 	text-decoration: underline;
 }
 
@@ -585,8 +590,7 @@ footer {
 		padding: 10px;
 		left: auto;
 		right: 0;
-		margin: 0 0 15px 0;
-		margin-right: 10px;
+		margin: 0  15px 15px 0;
 	}
 	.category {
 		font-size: 17px!important;
