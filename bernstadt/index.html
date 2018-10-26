@@ -58,7 +58,7 @@
 			<main>
 				<article class="top-left-article">
 					<a href="#">
-						<div class="title-big">This is the title This is the title</div>
+						<h1 class="title-big">This is the title This is the title</h1>
 						<img src="images/cars.jpg" alt="Cars" title="Photo by Nabeel Syed on Unsplash" />
 					</a>
 					<a href="#" class="category">OPINION: <span class="writer">JOHN SMITH</span></a>
@@ -68,14 +68,14 @@
 			<aside>
 				<article class="top-right-article">
 					<a href="#">
-						<div class="title-medium">This is the title This is the title</div>
+						<h1 class="title-medium">This is the title This is the title</h1>
 						<img src="images/people.jpg" alt="People" title="Photo by Wade Austin Ellis on Unsplash" />
 					</a>
 					<a href="#" class="category">OPINION: <span class="writer">JOHN SMITH</span></a>
 				</article>
 				<article class="top-right-article">
 					<a href="#">
-						<div class="title-medium">This is the title This is the title</div>
+						<h1 class="title-medium">This is the title This is the title</h1>
 						<img src="images/airport.jpg" alt="Article image" title="Photo by Skyler Smith on Unsplash" />
 					</a>
 					<a href="#" class="category">POLITICS</a>
@@ -86,55 +86,61 @@
 			<div class="wrap">
 			<section>
 				<div class="section-title">
-					<div class="title-big">Economy</div><a href="#">
-						<div class="title-small">More...</div>
+					<div class="section-title-container">
+					<h2 class="title-big title-big-section">Economy</h2>
+					<a href="#">
+						<h2 class="title-small title-small-section">More...</h2>
 					</a>
-					<hr class="phone-break" />
+					</div>
+					<hr class="separation" />
 				</div>
 				<div class="news-container">
 					<article class="section-article">
 						<a href="#">
-							<div class="title-small">This is the title This is the title</div>
+							<h1 class="title-small">This is the title This is the title</h1>
 							<img src="images/news.jpg" alt="Article image" title="Article image" />
 						</a>
 					</article>
 					<article class="section-article">
 						<a href="#">
-							<div class="title-small">This is the title This is the title</div>
+							<h1 class="title-small">This is the title This is the title</h1>
 							<img src="images/news.jpg" alt="Article image" title="Article image" />
 						</a>
 					</article>
 					<article class="section-article">
 						<a href="#">
-							<div class="title-small">This is the title This is the title</div>
+							<h1 class="title-small">This is the title This is the title</h1>
 							<img src="images/news.jpg" alt="Article image" title="Article image" />
 						</a>
 					</article>
 				</div>
 				<div class="section-title">
-					<div class="title-big">Technology</div><a href="#">
-						<div class="title-small">More...</div>
-					</a>
-					<hr class="phone-break" />
+					<div class="section-title-container">
+						<h2 class="title-big title-big-section">Technology</h2>
+						<a href="#">
+							<h2 class="title-small title-small-section">More...</h2>
+						</a>
+					</div>
+					<hr class="separation" />
 				</div>
 				<div class="news-container">
 					<article class="section-article">
 						<a href="#">
-							<div class="title-small">This is the title This is the titleThis is the title This is the titleThis is the title
-								This is the title</div>
+							<h1 class="title-small">This is the title This is the titleThis is the title This is the titleThis is the title
+								This is the title</h1>
 							<img src="images/news.jpg" alt="Article image" title="Article image" />
 						</a>
 						<a href="#" class="category">IFA 1998</a>
 					</article>
 					<article class="section-article">
 						<a href="#">
-							<div class="title-small">This is the title This is the title</div>
+							<h1 class="title-small">This is the title This is the title</h1>
 							<img src="images/news.jpg" alt="Article image" title="Article image" />
 						</a>
 					</article>
 					<article class="section-article">
 						<a href="#">
-							<div class="title-small">This is the title This is the title</div>
+							<h1 class="title-small">This is the title This is the title</h1>
 							<img src="images/news.jpg" alt="Article image" title="Article image" />
 						</a>
 					</article>
@@ -142,7 +148,7 @@
 				<div class="news-container">
 					<article class="section-article">
 						<a href="#">
-							<div class="title-small">This is the title This is the title</div>
+							<h1 class="title-small">This is the title This is the title</h1>
 							<img src="images/news.jpg" alt="Article image" title="Article image" />
 						</a>
 					</article>
@@ -157,7 +163,7 @@
 		<div class="wrap">
 			<div class="footer-cont">
 				<div class="logo logo-footer">
-					<a href="#"><img src="graphics/logo.svg" alt="Bernstadt Times" title="Bernstadt Times">
+					<a href="#"><img height="24px" src="graphics/logo.svg" alt="Bernstadt Times" title="Bernstadt Times">
 					</a>
 				</div>
 				<div class="search-box-footer">
@@ -171,7 +177,7 @@
 	</footer>
 </body>
 <script type="text/javascript">
-	if (window.matchMedia("(max-width: 670px)").matches) {
+	 if (window.matchMedia("(max-width: 670px)").matches) {
 		function addOverlay() {
 			var element = document.getElementById("overlay");
 			element.classList.add("overlay-class");
@@ -180,21 +186,7 @@
 			var z = document.getElementById("js-menutrigger");
 			z.style.marginLeft = "5px";
 		}
-	}
-
-	if (window.matchMedia("(max-width:1040px) and (min-width:671px)").matches) {
-		function addOverlay() {
-			var element = document.getElementById("overlay");
-			element.classList.add("overlay-class");
-		}
-	}
-
-	function removeOverlay() {
-		var element = document.getElementById("overlay");
-		element.classList.remove("overlay-class");
-	}
-
-	function showNav() {
+		function showNav() {
 		var x = document.getElementById("js-mobile-show");
 		var y = document.getElementById("overlay");
 		var z = document.getElementById("js-menutrigger");
@@ -207,6 +199,19 @@
 			y.classList.add("overlay-class");
 			z.style.marginLeft = "0px";
 		}
+	}
+	} 
+
+	if (window.matchMedia("(max-width:1040px) and (min-width:671px)").matches) {
+		function addOverlay() {
+			var element = document.getElementById("overlay");
+			element.classList.add("overlay-class");
+		}
+	}
+
+	function removeOverlay() {
+		var element = document.getElementById("overlay");
+		element.classList.remove("overlay-class");
 	}
 </script>
 
