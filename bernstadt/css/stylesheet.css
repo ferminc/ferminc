@@ -170,7 +170,7 @@ nav {
 	min-height: 100%;
 }
 
-main {
+.home-page-main-a {
 	width: 60%;
 	float: left;
 	margin-top: 40px;
@@ -178,7 +178,7 @@ main {
 	flex-direction: column;
 }
 
-aside {
+.home-page-aside-a {
 	width: 40%;
 	float: left;
 	margin-top: 40px;
@@ -192,7 +192,9 @@ section {
 	padding: 5px;
 }
 
-article {
+.top-left-article,
+.top-right-article,
+.section-article {
 	padding: 10px;
 	width: 100%;
 	position: relative;
@@ -202,7 +204,9 @@ article {
 	transition: .2s;
 }
 
-article img {
+.top-left-article img,
+.top-right-article img,
+.section-article img {
 	padding-top: 10px;
 	width: 100%;
 }
@@ -291,9 +295,9 @@ article img {
 	line-height: 100%;
 }
 
-article a:hover .title-big, 
-article a:hover .title-medium, 
-article a:hover .title-small {
+.link-article:hover .title-big, 
+.link-article:hover .title-medium, 
+.link-article:hover .title-small {
 	text-decoration: underline;
 }
 
@@ -581,8 +585,8 @@ footer {
 	.section-title-container {
 		align-items: flex-end;
 	}
-	aside, 
-	main, 
+	.home-page-aside-a, 
+	.home-page-main-a, 
 	.section-article {
 		width: 100%;
 		float: none;
@@ -591,10 +595,10 @@ footer {
 	.section-article {
 		margin: 5px 0;
 	}
-	aside {
+	.home-page-aside-a {
 		margin-top: 10px;
 	}
-	main {
+	.home-page-main-a {
 		margin: 10px 0 0 0;
 	}
 	.top-left-article, 
