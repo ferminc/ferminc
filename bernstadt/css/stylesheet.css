@@ -207,6 +207,11 @@ article img {
 	width: 100%;
 }
 
+.link-article {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}    
 .separation {
 	display: block;
 	border-bottom: 1px solid #999;
@@ -313,7 +318,8 @@ article a:hover .title-small {
 .section-article {
 	width: 33.3333%;
 	position: relative;
-	padding: 5px;
+	padding: 5px 5px 10px 5px;
+	margin-top: 5px;
 }
 
 .section-title {
@@ -400,6 +406,10 @@ footer {
 	margin-right: 5px;
 	margin-top: -2px;
 	background: #fff;
+}
+
+.search-icon-footer:hover {
+	background: #fff000
 }
 
 .search-icon-footer:focus {
