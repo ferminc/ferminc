@@ -1,0 +1,310 @@
+/* line 1, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+sass --watch input.scss output.css
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #000;
+}
+
+/* line 15, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+ul {
+  list-style: none;
+}
+
+/* line 27, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+.story-container {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  min-height: 100%;
+}
+
+@media screen and (max-width: 670px) {
+  /* line 27, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+  .story-container {
+    margin-top: 5px;
+  }
+}
+
+/* line 37, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+.top-story {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 670px) {
+  /* line 37, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+  .top-story {
+    flex-flow: column-reverse;
+  }
+  /* line 41, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+  .top-story :nth-child(2) {
+    order: 3;
+  }
+}
+
+/* line 49, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+.top-story-category {
+  text-align: center;
+}
+
+@media screen and (max-width: 670px) {
+  /* line 49, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+  .top-story-category {
+    font-size: 26px;
+  }
+}
+
+/* line 56, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+.button {
+  text-align: center;
+  padding: 2px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 64, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+.button-print {
+  background: #fff;
+  float: right;
+  cursor: pointer;
+  transition: .2s;
+}
+
+/* line 69, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+.button-print:hover {
+  background: #fff000;
+}
+
+/* line 72, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+.button-print:active {
+  transform: scale(0.9);
+}
+
+/* line 77, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+.button-img {
+  position: absolute;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: .7;
+}
+
+/* line 82, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+.button-img .button-text {
+  color: #fff;
+}
+
+/* line 85, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+.button-img:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 670px) {
+  /* line 77, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+  .button-img {
+    display: none;
+  }
+}
+
+/* line 93, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+.button-alignment,
+.top-story-category,
+.story-time {
+  flex-basis: 33.333%;
+}
+
+@media screen and (max-width: 670px) {
+  /* line 93, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+  .button-alignment,
+  .top-story-category,
+  .story-time {
+    flex-basis: unset;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  /* line 102, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+  .button-alignment {
+    display: none;
+  }
+}
+
+/* line 108, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+.button-text {
+  line-height: 30px;
+  margin-right: 5px;
+  font-weight: 700;
+}
+
+/* line 114, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+.show-bigger {
+  display: none;
+  transition: .2s;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 203;
+  right: 0;
+  top: 0;
+  animation: overlay .2s;
+}
+
+/* line 126, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+.overlay-img {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: block;
+  left: 0;
+  top: 0;
+  animation: overlay .2s;
+}
+
+@keyframes overlay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* line 147, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+.button-close-text {
+  color: #fff;
+}
+
+/* line 151, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+.button-close {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  margin: 20px 20px 0 0;
+  right: 0;
+  padding-left: 15px;
+  z-index: 203;
+}
+
+/* line 160, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+.show-bigger-img {
+  width: calc(100% - 40px);
+  position: relative;
+  margin: 70px 0 0 20px;
+  z-index: 203;
+}
+
+/* line 167, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+.story-time {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 670px) {
+  /* line 167, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+  .story-time {
+    margin-top: 10px;
+  }
+}
+
+/* line 175, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+.story-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+/* line 179, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+.story-title h2 {
+  font-size: 75%;
+  margin-top: 10px;
+  color: #333;
+}
+
+@media screen and (max-width: 670px) {
+  /* line 175, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+  .story-title {
+    font-size: 24px;
+  }
+}
+
+/* line 189, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+.story-title,
+.article-body-text {
+  font-family: 'Source Serif Pro', serif;
+}
+
+/* line 194, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+.story-article {
+  max-width: 800px;
+  width: 100%;
+  margin: 20px auto 0 auto;
+  position: relative;
+}
+
+/* line 201, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+.article-body-text {
+  font-size: 18px;
+  line-height: 1.3;
+  text-align: justify;
+  margin-top: 15px;
+}
+
+/* line 207, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+.article-body-text p:nth-child(1):first-letter {
+  float: left;
+  font-size: 400%;
+  margin-top: 5px;
+  margin-right: 5px;
+  color: #000;
+  line-height: .8;
+}
+
+@media screen and (max-width: 670px) {
+  /* line 201, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+  .article-body-text {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+
+/* line 222, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+.story-article-figure {
+  max-width: 800px;
+  width: 100%;
+  position: relative;
+  margin: 10px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 230, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+.story-article-figure .story-image {
+  width: 100%;
+}
+
+/* line 233, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+.story-article-figure figcaption {
+  text-align: center;
+  background: #f5f5f5;
+  padding: 5px;
+}
+
+@media screen and (max-width: 670px) {
+  /* line 222, C:/Users/ferc/Desktop/sass project/sass/articlestylesheet.scss */
+  .story-article-figure {
+    float: none;
+    display: inline;
+    max-width: unset;
+    width: calc(100vw - 20px);
+  }
+}
+
+/*# sourceMappingURL=../css/articlestylesheet.map */
