@@ -27,19 +27,20 @@
 		}
 
 		body {
-			height: 100%;
-			width: 100%;
+			height: 100vh;
+			width: 100vw;
 			line-height: 1.2;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transition: .2s;
 		}
 		section {
-			position: absolute;
-			left: 50%;
-			top: 50%;
-			transform: translate(-50%, -65%);
 			font-family: 'Franklin Gothic Medium', sans-serif;
-			font-size: 18px;
-			transition: .2s;
+			font-size: 20px;
 			color: #394B40;
+			position: absolute;
+			z-index: 1;
 		}
 
 		h1 {
@@ -49,18 +50,34 @@
 		h2 {
 			font-size: 150%;
 		}
+		h3, 
+		h4 {
+			font-weight: 400;
+		}
 		
 		a {
 			text-decoration: none;
 			color: #00a86b;
+			border-bottom: 1px solid transparent;
 		}
 		a:hover {
 			color: #3f704d;
 			border-bottom: 1px solid #3f704d;
 		}
+		.background {
+			content: "";
+			position: absolute;
+			z-index: 0;
+			top: 0;
+			left: 0;
+			background: #00a86b;
+			width: 100vw;
+			height: 100vh;
+		}
 		@media screen and (max-width: 767px) {
 			section {
 				width: 90vw;
+				font-size: 18px;	
 			}
 		}
 	</style>
@@ -70,9 +87,9 @@
 		<h1>Fermin Coronel</h1>
 		<h2>Front-end Developer</h2>
 		<br>
-		<h3><a href="https://fermin.io/bernstadt/">Checkout my last site design (in the works)</a></h3>
+		<h3><a href="/bernstadt/" class="link">Checkout my last project (in the works)</a></h3>
 		<br>
-		<h4>Contact: <a href="mailto:me@fermin.io">me@fermin.io</a> </h4>
+		<h4>Contact: <a href="mailto:me@fermin.io" class="link">me@fermin.io</a> </h4>
 	</section>
 </body>
 </html>
