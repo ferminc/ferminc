@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>Fermin's Portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="description" content="Fermin Coronel's personal website">
 	<meta name="theme-color" content="#00a86b">
@@ -19,77 +20,46 @@
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="@fermincoronel">
 	<meta name="twitter:creator" content="@fermincoronel">
-
-	<style type="text/css">
-		* {
-			margin: 0;
-			box-sizing: border-box;
-			transition: .2s;
-		}
-
-		body {
-			height: 100vh;
-			width: 100vw;
-			line-height: 1.2;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-		section {
-			font-family: 'Franklin Gothic Medium', sans-serif;
-			font-size: 20px;
-			color: #394B40;
-			position: absolute;
-			z-index: 1;
-		}
-
-		h1 {
-			font-size: 200%;
-			color: #000;
-		}
-		h2 {
-			font-size: 150%;
-		}
-		h3, 
-		h4 {
-			font-weight: 400;
-		}
-		
-		a {
-			text-decoration: none;
-			color: #00a86b;
-			border-bottom: 1px solid transparent;
-		}
-		a:hover {
-			color: #3f704d;
-			border-bottom: 1px solid #3f704d;
-		}
-		.background {
-			content: "";
-			position: absolute;
-			z-index: 0;
-			top: 0;
-			left: 0;
-			background: #00a86b;
-			width: 100vw;
-			height: 100vh;
-		}
-		@media screen and (max-width: 767px) {
-			section {
-				width: 90vw;
-				font-size: 18px;	
-			}
-		}
-	</style>
 </head>
 <body>
-	<section>
-		<h1>Fermin Coronel</h1>
-		<h2>Front-end Developer</h2>
-		<br>
-		<h3><a href="/bernstadt/" class="link">Checkout my last project (in the works)</a></h3>
-		<br>
-		<h4>Contact: <a href="mailto:me@fermin.io" class="link">me@fermin.io</a> </h4>
+	<button class="button" id="js-night">Night mode</button>
+	<section class="container" id="js-bg">
+		<section class="card">
+			<h1 class="name">Fermin Coronel</h1>
+			<h2 class="title">Front-end Developer</h2>
+			<br>
+			<h3 class="projects"><a href="/bernstadt/" class="link">Checkout my last project (in the works)</a></h3>
+			<br>
+			<h4 class="contact">Contact: <a href="mailto:me@fermin.io" class="link">me@fermin.io</a> </h4>
+		</section>
 	</section>
 </body>
+
+<script type="text/javascript">
+
+	var button = document.getElementById("js-night");
+	var backg = document.getElementById("js-bg");
+	var card = document.getElementsByClassName("card");
+	var title = document.getElementsByClassName("title");
+	var link = document.getElementsByClassName("link");
+
+	button.addEventListener("click", function () {
+		if (backg.classList.contains("container-night")) {
+			backg.classList.remove("container-night");
+            card[0].classList.remove("card-night");
+            title[0].classList.remove("title-night");
+            link[0].classList.remove("link-night");
+            link[1].classList.remove("link-night");
+        }
+        else {
+            backg.classList.add("container-night");
+            card[0].classList.add("card-night");
+            title[0].classList.add("title-night");
+            link[0].classList.add("link-night");
+            link[1].classList.add("link-night");
+        }
+	});
+
+
+</script>
 </html>
