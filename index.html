@@ -44,6 +44,7 @@
 	var link = document.getElementsByClassName("link");
 
 	button.addEventListener("click", function () {
+		this.blur();
 		if (backg.classList.contains("container-night")) {
 			backg.classList.remove("container-night");
             card[0].classList.remove("card-night");
@@ -59,7 +60,5 @@
             link[1].classList.add("link-night");
         }
 	});
-
-
 </script>
 </html>
