@@ -112,7 +112,7 @@ body {
     cursor: pointer;
     padding: 8px 12px;
     line-height: 1;
-    background: rgba(255, 255, 255, .2);
+    background: #00A86B;
     border-radius: 50px;
     border: 2px solid #fff;
     color: #fff;
@@ -120,12 +120,18 @@ body {
     text-transform: uppercase;
     font-size: 18px;
     outline: 0;
+    box-shadow: 0 2px 4px 0px rgba(0, 0, 0, .2);
 }
 
 .button:hover, .button:focus {
     background: #00A86B;
     border-color: #00A86B;
-    box-shadow:0 0 0px 2px rgba(255, 255, 255, .7);
+}
+
+.button:active {
+    transform: translate(0,2%);
+    
+    box-shadow: none;
 }
 
 @media screen and (max-width: 767px) {
