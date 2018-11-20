@@ -2,8 +2,6 @@
     margin: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    -webkit-transition: .2s;
-    transition: .2s;
 }
 
 body {
@@ -62,6 +60,8 @@ body {
     text-decoration: none;
     color: #00967B;
     border-bottom: 1px solid transparent;
+    -webkit-transition: .2s;
+    transition: .2s;
 }
 
 .link:hover {
@@ -122,6 +122,8 @@ body {
     font-size: 18px;
     outline: 0;
     box-shadow: 0 2px 4px 0px rgba(0, 0, 0, .2);
+    -webkit-transition: .2s;
+    transition: .2s;
 }
 
 .button:hover, .button:focus {
