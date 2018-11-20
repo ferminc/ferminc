@@ -51,7 +51,7 @@ body {
 .title {
     font-size: 150%;
     text-transform: uppercase;
-    color: #497E92;
+    color: #165B6E;
 }
 
 .projects, .contact {
@@ -60,7 +60,7 @@ body {
 
 .link {
     text-decoration: none;
-    color: #00A86B;
+    color: #00967B;
     border-bottom: 1px solid transparent;
 }
 
