@@ -28,7 +28,7 @@ body {
 
 .card {
     margin: 40px 0;
-    font-family: 'nimbus_sans', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-size: 20px;
     -ms-flex-item-align: center;
     align-self: center;
@@ -126,7 +126,7 @@ hr {
     border-radius: 50px;
     border: 2px solid #fff;
     color: #fff;
-    font-family: 'nimbus_sans', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-weight: 400;
     font-size: 18px;
     outline: 0;
