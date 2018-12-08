@@ -41,23 +41,11 @@ body {
 }
 
 .name {
-    font-size: 400%;
-    text-transform: uppercase;
-    line-height: 73%;
-    letter-spacing: -7px;
+    font-size: 270%;
+    letter-spacing: -3px;
+    line-height: 1;
     margin-bottom: 8px;
     font-weight: 700;
-    display: flex;
-    flex-flow: column;
-}
-
-.namename {
-    align-self: flex-start;
-}
-
-.surname {
-    align-self: flex-end;
-    color: #9CB0A4;
 }
 
 hr {
