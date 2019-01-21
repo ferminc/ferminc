@@ -2,227 +2,265 @@
 <html lang="en">
 
 <head>
-	<title>Bernstadt Times</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
-	<link rel="shortcut icon" type="image/png" href="graphics/fav.png" />
-	<link rel="icon" href="graphics/fav.svg" type="image/svg+xml" />
-	<meta name="theme-color" content="#fff000">
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700" rel="stylesheet" />
-	<meta name="description" content="Conceptual News site" />
-	<link rel="author" href="https://ferminc.com" />
-	<link rel="canonical" href="https://ferminc.com/bernstadt" />
+    <meta charset="utf-8">
+    <title>Bernstadt Times</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:400,600,700" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="graphics/fav.png">
+    <link rel="icon" href="graphics/fav.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#fff000">
+    <meta name="description" content="Conceptual News site">
+    <link rel="author" href="https://fermin.io">
+    <link rel="canonical" href="https://fermin.io">
 </head>
 
-<body>
-	<header>
-		<div class="wrap header-wrap">
-			<button id="js-menutrigger" class="menu-button" onclick="showNav()">
-				<img height="40px" src="graphics/menu.svg" />
-			</button>
-			<a href="#" class="weather">
-				<div class="weather-temp">20°C</div>
-				<div class="weather-state"><img width="38px" src="graphics/partlysunny.svg" /></div>
-			</a>
-			<a href="https://ferminc.com/bernstadt" class="logo header-logo">
-				<img width="412px" src="graphics/logo.svg" alt="Bernstadt Times" title="Bernstadt Times">
-			</a>
-			<div class="search-box-header">
-				<input type="search" name="search-box-footer" class="search-input-header" id="search-input-header" onfocus="addOverlay()" onblur="removeOverlay()" />
-				<label for="search-input-header">
-					<div class="search-icon">
-						<img height="30px" src="graphics/search.svg" alt="Search" title="Search" />
-					</div>
-				</label>
-			</div>
-		</div>
-		</div>
-	</header>
-		<div id="overlay" onclick="showNav()"></div>
-		<div class="site-content">
-			<div class="wrap">
-			<nav id="js-mobile-show" class="show-nav-mobile">
-				<ul class="nav-links">
-					<li><a href="#">Most recent</a></li>
-					<li><a href="#">Opinion</a></li>
-					<li><a href="#">Politics</a></li>
-					<li><a href="#">Economy</a></li>
-					<li><a href="#">Sports</a></li>
-					<li><a href="#">Technology</a></li>
-				</ul>
-			</nav>
-			</div>
-			<div class="wrap top-wrap">
-			<main class="home-page-main-a">
-				<article class="top-left-article">
-					<a href="https://ferminc.com/bernstadt/article/" class="link-article">
-						<h1 class="title-big">Aliquam malesuada diam urna, sed finibus lorem placerat vitae</h1>
-						<img src="images/cars.jpg" alt="Cars" title="Photo by Nabeel Syed on Unsplash" />
-					</a>
-					<a href="#" class="category">OPINION: <span class="writer">JOHN SMITH</span></a>
-				</article>
-				<article class="adversiment">Advertisement</article>
-			</main>
-			<div class="home-page-aside-a">
-				<article class="top-right-article">
-					<a href="https://ferminc.com/bernstadt/article/" class="link-article">
-						<h1 class="title-medium">Sed fermentum arcu vel accumsan aliquet. Cras volutpat scelerisque massa.</h1>
-						<img src="images/people.jpg" alt="People" title="Photo by Wade Austin Ellis on Unsplash" />
-					</a>
-					<a href="#" class="category">OPINION: <span class="writer">JOHN SMITH</span></a>
-				</article>
-				<article class="top-right-article">
-					<a href="https://ferminc.com/bernstadt/article/" class="link-article">
-						<h1 class="title-medium">Sed fermentum arcu vel accumsan aliquet. Cras volutpat scelerisque massa.</h1>
-						<img src="images/airport.jpg" alt="Article image" title="Photo by Skyler Smith on Unsplash" />
-					</a>
-					<a href="#" class="category">POLITICS</a>
-				</article>
-			</div>
-			</div>
-			
-			<div class="wrap">
-			<section>
-				<div class="section-title">
-					<div class="section-title-container">
-					<h2 class="title-big title-big-section">Economy</h2>
-					<a href="#">
-						<h2 class="title-small title-small-section">More...</h2>
-					</a>
-					</div>
-					<hr class="separation" />
-				</div>
-				<div class="news-container">
-					<article class="section-article">
-						<a href="https://ferminc.com/bernstadt/article/" class="link-article">
-							<h1 class="title-small">Aliquam sollicitudin libero nec lectus laoreet, eget pulvinar lorem volutpat.</h1>
-							<img src="images/news.jpg" alt="Article image" title="Article image" />
-						</a>
-					</article>
-					<article class="section-article">
-						<a href="https://ferminc.com/bernstadt/article/" class="link-article">
-							<h1 class="title-small">Aliquam sollicitudin libero nec lectus laoreet, eget pulvinar lorem volutpat.</h1>
-							<img src="images/news.jpg" alt="Article image" title="Article image" />
-						</a>
-					</article>
-					<article class="section-article">
-						<a href="https://ferminc.com/bernstadt/article/" class="link-article">
-							<h1 class="title-small">Aliquam sollicitudin libero nec lectus laoreet, eget pulvinar lorem volutpat.</h1>
-							<img src="images/news.jpg" alt="Article image" title="Article image" />
-						</a>
-					</article>
-				</div>
-				<div class="section-title">
-					<div class="section-title-container">
-						<h2 class="title-big title-big-section">Technology</h2>
-						<a href="#">
-							<h2 class="title-small title-small-section">More...</h2>
-						</a>
-					</div>
-					<hr class="separation" />
-				</div>
-				<div class="news-container">
-					<article class="section-article">
-						<a href="https://ferminc.com/bernstadt/article/" class="link-article">
-							<h1 class="title-small">Aliquam sollicitudin libero nec lectus laoreet, eget pulvinar lorem volutpat.</h1>
-							<img src="images/news.jpg" alt="Article image" title="Article image" />
-						</a>
-						<a href="#" class="category">IFA 1998</a>
-					</article>
-					<article class="section-article">
-						<a href="https://ferminc.com/bernstadt/article/" class="link-article">
-							<h1 class="title-small">Aliquam sollicitudin libero nec lectus laoreet, eget pulvinar lorem volutpat.</h1>
-							<img src="images/news.jpg" alt="Article image" title="Article image" />
-						</a>
-					</article>
-					<article class="section-article">
-						<a href="https://ferminc.com/bernstadt/article/" class="link-article">
-							<h1 class="title-small">Aliquam sollicitudin libero nec lectus laoreet, eget pulvinar lorem volutpat.</h1>
-							<img src="images/news.jpg" alt="Article image" title="Article image" />
-						</a>
-					</article>
-				</div>
-				<div class="news-container">
-					<article class="section-article">
-						<a href="https://ferminc.com/bernstadt/article/" class="link-article">
-							<h1 class="title-small">Aliquam sollicitudin libero nec lectus laoreet, eget pulvinar lorem volutpat libero nec lectus</h1>
-							<img src="images/news.jpg" alt="Article image" title="Article image" />
-						</a>
-					</article>
-					<article class="section-article">
-						<a href="https://ferminc.com/bernstadt/article/" class="link-article">
-							<h1 class="title-small">Aliquam sollicitudin libero nec lectus laoreet.</h1>
-							<img src="images/news.jpg" alt="Article image" title="Article image" />
-						</a>
-					</article>
-					<article class="section-article">
-						<a href="https://ferminc.com/bernstadt/article/" class="link-article">
-							<h1 class="title-small">Aliquam sollicitudin libero nec lectus laoreet.</h1>
-							<img src="images/news.jpg" alt="Article image" title="Article image" />
-						</a>
-					</article>
-				</div>
-			</section>
-			</div>
-			<div class="bottom-padding"></div>
-		</div>
-	</div>
-	<footer>
-		<div class="wrap">
-			<div class="footer-cont">
-				<div class="logo logo-footer">
-					<a href="#"><img height="24px" src="graphics/logo.svg" alt="Bernstadt Times" title="Bernstadt Times">
-					</a>
-				</div>
-				<div class="search-box-footer">
-					<input type="search" name="search-input-footer" placeholder="Search..." class="search-input-footer" id="search-input-footer">
-					<button class="search-icon search-icon-footer">
-						<img height="24px" src="graphics/search.svg" alt="Search" title="Search" />
-					</button>
-				</div>
-			</div>
-		</div>
-	</footer>
+<body id="js-overlay">
+    <div class="home-page" id="js-html-unscroll">
+        <header class="header grid" id="js-header">
+            <div class="column">
+                <button type="button" class="button button_menu" id="js-hide-menu">
+                    <svg class="button-icon" height="32px" width="32px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M432 176H80c-8.8 0-16-7.2-16-16s7.2-16 16-16h352c8.8 0 16 7.2 16 16s-7.2 16-16 16zM432 272H80c-8.8 0-16-7.2-16-16s7.2-16 16-16h352c8.8 0 16 7.2 16 16s-7.2 16-16 16zM432 368H80c-8.8 0-16-7.2-16-16s7.2-16 16-16h352c8.8 0 16 7.2 16 16s-7.2 16-16 16z" />
+                    </svg>
+                </button>
+                <a href="#" class="logo header__logo" id="js-hide-l">
+                    <img width="370px" src="graphics/logo.svg" title="Bernstadt Times" alt="Bernstadt Times">
+                </a>
+                <button id="js-show-c-s" class="button button_search button_search_close" style="display:none;">
+                    <span class="button-text">Close</span>
+                    <svg class="button-icon" height="32px" width="32px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z" />
+                    </svg>
+                </button>
+                <button id="js-show-s-m" class="button button_search button_search_close">
+                    <span class="button-text">Search</span>
+                    <svg class="button-icon" height="32px" width="32px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M443.5 420.2L336.7 312.4c20.9-26.2 33.5-59.4 33.5-95.5 0-84.5-68.5-153-153.1-153S64 132.5 64 217s68.5 153 153.1 153c36.6 0 70.1-12.8 96.5-34.2l106.1 107.1c3.2 3.4 7.6 5.1 11.9 5.1 4.1 0 8.2-1.5 11.3-4.5 6.6-6.3 6.8-16.7.6-23.3zm-226.4-83.1c-32.1 0-62.3-12.5-85-35.2-22.7-22.7-35.2-52.9-35.2-84.9 0-32.1 12.5-62.3 35.2-84.9 22.7-22.7 52.9-35.2 85-35.2s62.3 12.5 85 35.2c22.7 22.7 35.2 52.9 35.2 84.9 0 32.1-12.5 62.3-35.2 84.9-22.7 22.7-52.9 35.2-85 35.2z" />
+                    </svg>
+                </button>
+                <form class="header__search-form" id="js-search-form">
+                    <input id="header__search-form_input" class="header__search-form_input" type="search" placeholder="Search..."
+                        required>
+                    <button type="submit" id="js-show-s-b" class="button button_search button_search_submit">
+                        <span class="button-text">Search</span>
+                        <svg class="button-icon" height="32px" width="32px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M443.5 420.2L336.7 312.4c20.9-26.2 33.5-59.4 33.5-95.5 0-84.5-68.5-153-153.1-153S64 132.5 64 217s68.5 153 153.1 153c36.6 0 70.1-12.8 96.5-34.2l106.1 107.1c3.2 3.4 7.6 5.1 11.9 5.1 4.1 0 8.2-1.5 11.3-4.5 6.6-6.3 6.8-16.7.6-23.3zm-226.4-83.1c-32.1 0-62.3-12.5-85-35.2-22.7-22.7-35.2-52.9-35.2-84.9 0-32.1 12.5-62.3 35.2-84.9 22.7-22.7 52.9-35.2 85-35.2s62.3 12.5 85 35.2c22.7 22.7 35.2 52.9 35.2 84.9 0 32.1-12.5 62.3-35.2 84.9-22.7 22.7-52.9 35.2-85 35.2z" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </header>
+            <nav class="nav grid">
+                <ul class="nav__list column" id="js-hide-nav">
+                    <li class="nav__link"><a href="#">Most recent</a></li>
+                    <li class="nav__link"><a href="#">Economics</a></li>
+                    <li class="nav__link"><a href="#">Politics</a></li>
+                    <li class="nav__link"><a href="#">Technology</a></li>
+                    <li class="nav__link"><a href="#">Sports</a></li>
+                    <li class="nav__link"><a href="#">Opinion</a></li>
+                </ul>
+            </nav>
+        <main class="main">
+            <div class="main-top">
+                <div class="main-top-left">
+                    <article class="article main-top-left-art">
+                        <a href="#" class="category main-top-left-art__category">Technology</a>
+                        <a href="/article" class="article-link main-top-left-art__link">
+                            <div class="img main-top-left-art__img"><img title="News image" src="images/news.jpg"></div>
+                            <div class="main-top-left-art__cont">
+                                <h2 class="title title--big main-top-left-art__title">Technology giant Microsoft
+                                    completes
+                                    acquisition of GitHub</h2>
+                                <h3 class="subtitle main-top-left-art__subtitle">On Friday, US-based technology giant
+                                    Microsoft confirmed acquisition of software code hosting and version controlling
+                                    website GitHub. The announcement was made by Microsoft via their official blog,
+                                    which also mentioned Nat Friedman was to become new Chief Executive Officer of
+                                    GitHub.</h3>
+                            </div>
+                        </a>
+                    </article>
+                    <div class="main-top-left-row">
+                        <article class="article main-top-left-art-row-art">
+                            <a href="/article" class="article-link main-top-left-art-row-art__link">
+                                <div class="main-top-left-art-row-art__cont">
+                                    <h2 class="title title--small main-top-left-art-row-art__title">Four arrested in plot to bomb infrastructure at JFK International Airport, New York City</h2>
+                                    <div class="img main-top-left-art-row-art__img"><img title="News image" src="images/jfk.jpg"></div>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="article main-top-left-art-row-art">
+                            <a href="/article" class="article-link main-top-left-art-row-art__link">
+                                <div class="main-top-left-art-row-art__cont">
+                                    <h2 class="title title--small main-top-left-art-row-art__title">Storm causes building wall at Amazon.com warehouse to collapse</h2>
+                                    
+                                <h3 class="subtitle main-top-left-art-row-art__subtitle">On Friday, a storm caused a building to partially collapse in the Amazon Fulfillment Center at the warehouse of Amazon.com, a US-based online retailer, in south-east Baltimore, Maryland, United States.</h3>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="article main-top-left-art-row-art">
+                            <a href="/article" class="article-link main-top-left-art-row-art__link">
+                                <div class="main-top-left-art-row-art__cont">
+                                    <h2 class="title title--small main-top-left-art-row-art__title">Technology giant Microsoft completes acquisition of GitHub</h2>
+                                    <div class="img main-top-left-art-row-art__img"><img title="News image" src="images/news.jpg"></div>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                    
+                </div>
+                <div class="main-top-right">
+                    <article class="article main-top-right-art">
+                        <a href="#" class="category main-top-right-art__category">Economy</a>
+                        <a href="/article" class="article-link">
+                            <h2 class="title title--medium main-top-right-art__title">Japan facing 'most severe crisis
+                                since World War II', says prime minister</h2>
+                            <div class="main-top-right-art__cont">
+                                <div class="main-top-right-art__img"><img title="News image" src="images/japan.jpg"></div>
+                                <h3 class="subtitle main-top-right-art__subtitle">Amongst the aftermath of a magnitude
+                                    8.9 earthquake which struck on Friday, followed by a tsunami, Naoto Kan, the prime
+                                    minister of Japan, claimed that the country is experiencing its largest
+                                    difficulties since the end of World War II in 1945.</h3>
+
+                            </div>
+                        </a>
+                    </article>
+                    <article class="article main-top-right-art">
+                        <a href="/article" class="article-link">
+                            <h2 class="title title--medium main-top-right-art__title">Technology giant Microsoft
+                                completes
+                                acquisition of GitHub</h2>
+                            <div class="main-top-right-art__cont">
+                                    <div class="main-top-right-art__img"><img title="News image" src="images/news.jpg"></div>
+                                <h3 class="subtitle main-top-right-art__subtitle">On Friday, US-based technology giant
+                                    Microsoft confirmed acquisition of software code hosting and version controlling
+                                    website GitHub. The announcement was made by Microsoft via their official blog,
+                                    which also mentioned Nat Friedman was to become new Chief Executive Officer of
+                                    GitHub.</h3>
+                                
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+            <div class="main-categories grid">
+                <div class="column">
+                    <div class="title title--medium">
+                        Economics
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </main>
+        <footer class="footer grid" id="js-hide-footer">
+            <div class="column">
+                <div class="footer_cont">
+                    <a class="logo footer_logo">
+                        <img width="180px" src="graphics/logo.svg" title="Bernstadt Times" alt="Bernstadt Times">
+                    </a>
+                    <ul class="footer_nav__list" id="js-hide-nav">
+                        <a href="#">
+                            <li class="footer_nav__link">About us</li>
+                        </a>
+                        <a href="#">
+                            <li class="footer_nav__link">Contact</li>
+                        </a>
+                        <a href="#">
+                            <li class="footer_nav__link">Advert</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
+
 <script type="text/javascript">
-	 if (window.matchMedia("(max-width: 670px)").matches) {
-		function addOverlay() {
-			var element = document.getElementById("overlay");
-			element.classList.add("overlay-class");
-			var x = document.getElementById("js-mobile-show");
-			x.style.display = "none";
-			var z = document.getElementById("js-menutrigger");
-			z.style.marginLeft = "5px";
-		}
-		function showNav() {
-		var x = document.getElementById("js-mobile-show");
-		var y = document.getElementById("overlay");
-		var z = document.getElementById("js-menutrigger");
-		if (x.style.display === "block") {
-			x.style.display = "none";
-			y.classList.remove("overlay-class");
-			z.style.marginLeft = "5px";
-		} else {
-			x.style.display = "block";
-			y.classList.add("overlay-class");
-			z.style.marginLeft = "0px";
-		}
-	}
-	} 
 
-	if (window.matchMedia("(max-width:1040px) and (min-width:671px)").matches) {
-		function addOverlay() {
-			var element = document.getElementById("overlay");
-			element.classList.add("overlay-class");
-		}
-	}
+    var searchInput = document.getElementById("header__search-form_input");
+    var header = document.getElementById("js-header");
+    var closeButton = document.getElementById("js-show-c-s");
+    var openSearch = document.getElementById("js-show-s-m");
+    var searchForm = document.getElementById("js-search-form");
+    var overlay = document.getElementById("js-overlay");
+    var unscrollHTML = document.getElementById("js-html-unscroll");
+    /*
+        searchInput.addEventListener("focus", function () {
+            document.getElementById("js-hide-l").style.display = "none";
+            document.getElementById("js-hide-s-m").style.display = "none";
+            closeButton.style.display = "inline-flex";
+            searchInput.classList.add("header__search-form_input--js-triggered");
+            if (window.matchMedia("(min-width: 768px)").matches) {
+                document.getElementById("js-show-s-b").style.display = "inline-flex";
+            }
+    
+            if (window.matchMedia("(max-width: 767px)").matches) {
+                document.getElementsByClassName("button_search")[0].style.display = "none";
+                document.getElementById("js-overlay").classList.add("home-page-overlay");
+                document.getElementById("js-html-unscroll").classList.add("html-unscroll");
+                document.getElementById("js-hide-footer").style.display = "none";
+            }
+    
+    
+        });
+        searchInput.addEventListener("blur", function () {
+            document.getElementById("js-hide-l").style.display = "block";
+            document.getElementById("js-hide-s-m").style.display = "inline-flex";
+            document.getElementById("js-overlay").classList.remove("home-page-overlay");
+            document.getElementById("js-html-unscroll").classList.remove("html-unscroll");
+            if (window.matchMedia("(max-width: 767px)").matches) {
+                document.getElementById("js-hide-footer").style.display = "grid";
+            }
+            if (window.matchMedia("(min-width: 768px)").matches) {
+            document.getElementById("js-hide-s-m").style.display = "none";
+            }
+        });*/
 
-	function removeOverlay() {
-		var element = document.getElementById("overlay");
-		element.classList.remove("overlay-class");
-	}
+
+    openSearch.addEventListener("click", function () {
+        header.classList.add("header-js");
+        closeButton.style.display = "inline-flex";
+        openSearch.style.display = "none";
+        searchForm.style.display = "flex";
+        overlay.classList.add("home-page-overlay");
+        searchInput.focus();
+        closeButton.classList.add("button-js-hover");
+    });
+
+    closeButton.addEventListener("click", function () {
+        closeButton.style.display = "none";
+        searchInput.classList.remove("header__search-form_input--js-triggered");
+        header.classList.remove("header-js");
+        openSearch.style.display = "inline-flex";
+        searchForm.style.display = "none";
+        overlay.classList.remove("home-page-overlay");
+    });
+
+
+    /*
+        document.getElementById("js-hide-menu").addEventListener("click", function () {
+            if (document.getElementById("js-hide-nav").style.height === "306px") {
+                document.getElementById("js-hide-nav").style.height = "0";
+            } else {
+                document.getElementById("js-hide-nav").style.height = "306px";
+            }
+        });
+    */
+    var nav = document.getElementById("js-hide-nav");
+    var menuButton = document.getElementById("js-hide-menu");
+
+    menuButton.addEventListener("click", function () {
+
+        if (nav.classList.contains("nav-js")) {
+            nav.classList.remove("nav-js");
+        }
+        else {
+            nav.classList.add("nav-js");
+        }
+
+    });
+
 </script>
 
 </html>
