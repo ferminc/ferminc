@@ -16,8 +16,8 @@
     <link rel="canonical" href="https://fermin.io">
 </head>
 
-<body id="js-overlay">
-    <div class="home-page" id="js-html-unscroll">
+<body id="js-html-unscroll">
+    <div class="home-page">
         <header class="header grid" id="js-header">
             <div class="column">
                 <button type="button" class="button button_menu" id="js-hide-menu">
@@ -52,21 +52,21 @@
                 </form>
             </div>
         </header>
-            <nav class="nav grid">
-                <ul class="nav__list column" id="js-hide-nav">
-                    <li class="nav__link"><a href="#">Most recent</a></li>
-                    <li class="nav__link"><a href="#">Economics</a></li>
-                    <li class="nav__link"><a href="#">Politics</a></li>
-                    <li class="nav__link"><a href="#">Technology</a></li>
-                    <li class="nav__link"><a href="#">Sports</a></li>
-                    <li class="nav__link"><a href="#">Opinion</a></li>
-                </ul>
-            </nav>
+        <div id="js-overlay"></div>
+        <nav class="nav grid">
+            <ul class="nav__list column" id="js-hide-nav">
+                <li class="nav__link"><a href="#">Most recent</a></li>
+                <li class="nav__link"><a href="#">Economics</a></li>
+                <li class="nav__link"><a href="#">Politics</a></li>
+                <li class="nav__link"><a href="#">Technology</a></li>
+                <li class="nav__link"><a href="#">Sports</a></li>
+                <li class="nav__link"><a href="#">Opinion</a></li>
+            </ul>
+        </nav>
         <main class="main">
             <div class="main-top">
                 <div class="main-top-left">
                     <article class="article main-top-left-art">
-                        <a href="#" class="category main-top-left-art__category">Technology</a>
                         <a href="/article" class="article-link main-top-left-art__link">
                             <div class="img main-top-left-art__img"><img title="News image" src="images/news.jpg"></div>
                             <div class="main-top-left-art__cont">
@@ -82,37 +82,42 @@
                         </a>
                     </article>
                     <div class="main-top-left-row">
-                        <article class="article main-top-left-art-row-art">
-                            <a href="/article" class="article-link main-top-left-art-row-art__link">
-                                <div class="main-top-left-art-row-art__cont">
-                                    <h2 class="title title--small main-top-left-art-row-art__title">Four arrested in plot to bomb infrastructure at JFK International Airport, New York City</h2>
-                                    <div class="img main-top-left-art-row-art__img"><img title="News image" src="images/jfk.jpg"></div>
+                        <article class="article main-top-left-row-art">
+                            <a href="/article" class="article-link main-top-left-row-art__link">
+                                <div class="main-top-left-row-art__cont">
+                                    <h2 class="title title--small main-top-left-row-art__title">Four arrested in
+                                        plot to bomb infrastructure at JFK International Airport, New York City</h2>
+                                    <div class="img main-top-left-row-art__img"><img title="News image" src="images/jfk.jpg"></div>
                                 </div>
                             </a>
                         </article>
-                        <article class="article main-top-left-art-row-art">
-                            <a href="/article" class="article-link main-top-left-art-row-art__link">
-                                <div class="main-top-left-art-row-art__cont">
-                                    <h2 class="title title--small main-top-left-art-row-art__title">Storm causes building wall at Amazon.com warehouse to collapse</h2>
-                                    
-                                <h3 class="subtitle main-top-left-art-row-art__subtitle">On Friday, a storm caused a building to partially collapse in the Amazon Fulfillment Center at the warehouse of Amazon.com, a US-based online retailer, in south-east Baltimore, Maryland, United States.</h3>
+                        <article class="article main-top-left-row-art">
+                            <a href="/article" class="article-link main-top-left-row-art__link">
+                                <div class="main-top-left-row-art__cont">
+                                    <h2 class="title title--small main-top-left-row-art__title">Storm causes
+                                        building wall at Amazon.com warehouse to collapse</h2>
+
+                                    <h3 class="subtitle main-top-left-row-art__subtitle">On Friday, a storm caused
+                                        a building to partially collapse in the Amazon Fulfillment Center at the
+                                        warehouse of Amazon.com, a US-based online retailer, in south-east Baltimore,
+                                        Maryland, United States.</h3>
                                 </div>
                             </a>
                         </article>
-                        <article class="article main-top-left-art-row-art">
-                            <a href="/article" class="article-link main-top-left-art-row-art__link">
-                                <div class="main-top-left-art-row-art__cont">
-                                    <h2 class="title title--small main-top-left-art-row-art__title">Technology giant Microsoft completes acquisition of GitHub</h2>
-                                    <div class="img main-top-left-art-row-art__img"><img title="News image" src="images/news.jpg"></div>
+                        <article class="article main-top-left-row-art">
+                            <a href="/article" class="article-link main-top-left-row-art__link">
+                                <div class="main-top-left-row-art__cont">
+                                    <h2 class="title title--small main-top-left-row-art__title">Technology giant
+                                        Microsoft completes acquisition of GitHub</h2>
+                                    <div class="img main-top-left-row-art__img"><img title="News image" src="images/news.jpg"></div>
                                 </div>
                             </a>
                         </article>
                     </div>
-                    
+
                 </div>
                 <div class="main-top-right">
                     <article class="article main-top-right-art">
-                        <a href="#" class="category main-top-right-art__category">Economy</a>
                         <a href="/article" class="article-link">
                             <h2 class="title title--medium main-top-right-art__title">Japan facing 'most severe crisis
                                 since World War II', says prime minister</h2>
@@ -132,13 +137,13 @@
                                 completes
                                 acquisition of GitHub</h2>
                             <div class="main-top-right-art__cont">
-                                    <div class="main-top-right-art__img"><img title="News image" src="images/news.jpg"></div>
+                                <div class="main-top-right-art__img"><img title="News image" src="images/news.jpg"></div>
                                 <h3 class="subtitle main-top-right-art__subtitle">On Friday, US-based technology giant
                                     Microsoft confirmed acquisition of software code hosting and version controlling
                                     website GitHub. The announcement was made by Microsoft via their official blog,
                                     which also mentioned Nat Friedman was to become new Chief Executive Officer of
                                     GitHub.</h3>
-                                
+
                             </div>
                         </a>
                     </article>
@@ -226,15 +231,19 @@
         overlay.classList.add("home-page-overlay");
         searchInput.focus();
         closeButton.classList.add("button-js-hover");
+        unscrollHTML.classList.add("html-unscroll");
     });
 
-    closeButton.addEventListener("click", function () {
-        closeButton.style.display = "none";
-        searchInput.classList.remove("header__search-form_input--js-triggered");
-        header.classList.remove("header-js");
-        openSearch.style.display = "inline-flex";
-        searchForm.style.display = "none";
-        overlay.classList.remove("home-page-overlay");
+    [closeButton, overlay].forEach(function (close) {
+        close.addEventListener("click", function () {
+            closeButton.style.display = "none";
+            searchInput.classList.remove("header__search-form_input--js-triggered");
+            header.classList.remove("header-js");
+            openSearch.style.display = "inline-flex";
+            searchForm.style.display = "none";
+            overlay.classList.remove("home-page-overlay");
+            unscrollHTML.classList.remove("html-unscroll");
+        });
     });
 
 
